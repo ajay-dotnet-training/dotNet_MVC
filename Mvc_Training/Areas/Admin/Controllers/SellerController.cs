@@ -11,7 +11,7 @@ namespace Mvc_Training.Areas.Admin.Controllers
     {
         // GET: Admin/Seller
         [CustomAuthentication]
-        [CustomAction]
+        [CustomActionResult]
         [CustomException]
         public ActionResult Index()
         {

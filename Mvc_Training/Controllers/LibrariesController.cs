@@ -81,6 +81,7 @@ namespace Mvc_Training.Controllers
         // PUT: Libraries/Edit/5
         [Route("Edit/{id}")]
         [HttpPost]
+       // [HttpPut]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "BookId,Title,Author,Genre,PublishYear")] Library library)
         {
@@ -105,7 +106,7 @@ namespace Mvc_Training.Controllers
             if (library == null)
             {
                 return HttpNotFound();
-            }
+            }   
             return View(library);
         }
 
