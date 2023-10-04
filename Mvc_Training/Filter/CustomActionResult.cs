@@ -12,7 +12,7 @@ namespace Mvc_Training.Filter
         public override void OnActionExecuted(ActionExecutedContext filterContext)
         {
           //Debug.WriteLine("Hello From CustomAction Filter OnActionExecuted");
-            filterContext.Controller.ViewBag.ActionMessage = "OnActionExecuted of CustomActionResult Filter Included in Admin Area ";
+            filterContext.Controller.ViewBag.ActionMessage = "OnActionExecuted of CustomActionResult Filter Included in Admin Area For Seller Controller ";
             
             // Code to be executed after the action method has been called
             //string controllerName = filterContext.RouteData.Values["controller"].ToString();
