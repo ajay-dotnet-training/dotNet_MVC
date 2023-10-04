@@ -15,10 +15,10 @@ namespace Mvc_Training.Filter
             filterContext.Controller.ViewBag.ActionMessage = "OnActionExecuted of CustomActionResult Filter Included in Admin Area ";
             
             // Code to be executed after the action method has been called
-            string controllerName = filterContext.RouteData.Values["controller"].ToString();
-            string actionName = filterContext.RouteData.Values["action"].ToString();
-            string logMessage = $"Executed action {actionName} in controller {controllerName} at {DateTime.Now}";
-            Console.WriteLine(logMessage);
+            //string controllerName = filterContext.RouteData.Values["controller"].ToString();
+            //string actionName = filterContext.RouteData.Values["action"].ToString();
+            //string logMessage = $"Executed action {actionName} in controller {controllerName} at {DateTime.Now}";
+            //Console.WriteLine(logMessage);
 
             base.OnActionExecuted(filterContext);
         }
@@ -26,10 +26,10 @@ namespace Mvc_Training.Filter
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             // Code to be executed before the action method is called
-            string controllerName = filterContext.RouteData.Values["controller"].ToString();
-            string actionName = filterContext.RouteData.Values["action"].ToString();
-            string logMessage = $"Executing action {actionName} in controller {controllerName} at {DateTime.Now}";
-            Console.WriteLine(logMessage);
+            //string controllerName = filterContext.RouteData.Values["controller"].ToString();
+            //string actionName = filterContext.RouteData.Values["action"].ToString();
+            //string logMessage = $"Executing action {actionName} in controller {controllerName} at {DateTime.Now}";
+            //Console.WriteLine(logMessage);
 
             // You can also log to a file, database, or any other desired location
             base.OnActionExecuting(filterContext);
