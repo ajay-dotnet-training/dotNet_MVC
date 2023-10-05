@@ -13,7 +13,7 @@ namespace Mvc_Training.Areas.Admin.Controllers
         // GET: Admin/Account
         public ActionResult Index()
         {
-            return View();
+            return View(); 
         }
 
         // POST : Admin/Account 

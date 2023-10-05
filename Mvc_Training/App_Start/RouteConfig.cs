@@ -18,6 +18,7 @@ namespace Mvc_Training
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                //namespace: new string[] {"Mvc_Training.Controllers"}
             );
         }
     }
